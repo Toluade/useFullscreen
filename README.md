@@ -5,9 +5,9 @@ _React hook that allows toggling between fullscreen mode and normal mode in a we
 ## Install
 
 ```sh
-yarn add use-fullscreen
+yarn add @toluade/use-fullscreen
 # or
-npm i use-fullscreen --save
+npm i @toluade/use-fullscreen --save
 ```
 
 ## Example Usage
