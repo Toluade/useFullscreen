@@ -33,5 +33,6 @@ function App() {
 
 ### Props
 
-|Prop |Description |Type |
-|containerId |The id of the element to be set to fullscreen. |string |
+| Prop        | Description                                    | Type   |
+| ----------- | ---------------------------------------------- | ------ |
+| containerId | The id of the element to be set to fullscreen. | string |
