@@ -2,6 +2,11 @@
   "name": "@toluade/use-fullscreen",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toluade/useFullscreen.git"
+  },
+  "homepage": "https://github.com/Toluade/useFullscreen#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,7 +14,7 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Toluwalope Adeoye <toluade1512@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.2",
