@@ -1,6 +1,6 @@
 {
   "name": "@toluade/use-fullscreen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "repository": {
     "type": "git",
@@ -13,7 +13,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "fullscreen",
+    "react",
+    "hooks"
+  ],
   "author": "Toluwalope Adeoye <toluade1512@gmail.com>",
   "license": "MIT",
   "devDependencies": {
