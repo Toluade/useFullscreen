@@ -62,7 +62,7 @@ function useFullScreen(containerId: string) {
     }
   };
 
-  const toggleFullScreen = <T>(e: T | any = null) => {
+  const toggleFullScreen = (e: MouseEvent | null = null) => {
     if (e !== null) {
       e.stopPropagation();
     }
