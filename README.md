@@ -1,12 +1,12 @@
 # useFullscreen
 
-\_A React hook that allows toggling between fullscreen mode and normal mode in a web application. The useFullscreen hook returns an object containing the following:
+A React hook that allows toggling between fullscreen mode and normal mode in a web application. The useFullscreen hook returns an object containing the following:
 
 - toggleFullscreen
 - exitFullscreen
 - isFullscreen
 
-When screen lock is supported, the screen stays awake when in fullscreen mode.\_
+When screen lock is supported, the screen stays awake when in fullscreen mode.
 
 ## Install
 
