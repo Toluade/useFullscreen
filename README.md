@@ -6,7 +6,39 @@ A React hook that allows toggling between fullscreen mode and normal mode in a w
 - exitFullscreen
 - isFullscreen
 
-When screen lock is supported, the screen stays awake when in fullscreen mode.
+> _Note: When screen lock is supported, the screen stays awake when in fullscreen mode._
+
+### Props
+
+- `containerId: string`
+  - This is the `id` of the element you want to set as fullscreen. Please note that the `containerId` is required.
+
+## toggleFullscreen
+
+```js
+const { toggleFullscreen } = useFullscreen(containerId);
+```
+
+- `toggleFullscreen(e: MouseEvent | null) => void`
+  - This function toggles the element whose `id` is passed to the `useFullscreen` hook between fullscreen mode and normal mode.
+
+## exitFullscreen
+
+```js
+const { exitFullscreen } = useFullscreen(containerId);
+```
+
+- `exitFullscreen() => void`
+  - This function exits fullscreen mode.
+
+## isFullscreen
+
+```js
+const { isFullscreen } = useFullscreen(containerId);
+```
+
+- `isFullscreen: boolean`
+  - Returns `true` when in fullscreen mode and `false` when in normal mode
 
 ## Install
 
@@ -21,14 +53,14 @@ npm i @toluade/use-fullscreen --save
 ```js
 import useFullScreen from "use-fullscreen";
 
-const container_id = "container";
+const containerId = "container";
 
 function App() {
   const { toggleFullScreen, isFullScreen, exitFullscreen } =
-    useFullScreen(container_id);
+    useFullScreen(containerId);
 
   return (
-    <div id={container_id}>
+    <div id={containerId}>
       <button onClick={toggleFullScreen}>Toggle Fullscreen</button>
       {isFullScreen ? <p>Fullscreen mode</p> : <p>Normal mode</p>}
       <button onClick={exitFullscreen}>Exit Fullscreen</button>
@@ -40,14 +72,14 @@ function App() {
 ```js
 import useFullScreen from "use-fullscreen";
 
-const container_id = "container";
+const containerId = "container";
 
 function App() {
   const { toggleFullScreen, isFullScreen, exitFullscreen } =
-    useFullScreen(container_id);
+    useFullScreen(containerId);
 
   return (
-    <div id={container_id} onDoubleClick={(e) => toggleFullscreen(e)}>
+    <div id={containerId} onDoubleClick={(e) => toggleFullscreen(e)}>
       <p>{isFullscreen ? "Fullscreen Mode" : "Normal mode"}</p>
     </div>
   );
