@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 
 /**
  * @author ToluAde
@@ -45,7 +45,7 @@ function useFullScreen(containerId: string) {
     }
   }
 
-  function exitFullscreen() {
+  const exitFullscreen = () => {
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if (document.mozCancelFullScreen) {
@@ -53,7 +53,7 @@ function useFullScreen(containerId: string) {
     } else if (document.webkitExitFullscreen) {
       document.webkitExitFullscreen();
     }
-  }
+  };
 
   const fullScreenMode = () => {
     const container = document.getElementById(containerId);
