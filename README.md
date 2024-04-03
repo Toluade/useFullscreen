@@ -42,10 +42,16 @@ const { isFullscreen } = useFullscreen(containerId);
 
 ## Install
 
-```sh
-yarn add @toluade/use-fullscreen
-# or
+npm
+
+```sh npm
 npm i @toluade/use-fullscreen --save
+```
+
+yarn
+
+```sh yarn
+yarn add @toluade/use-fullscreen
 ```
 
 ## Example Usage
