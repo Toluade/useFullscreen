@@ -1,5 +1,7 @@
 # useFullscreen
 
+[![NPM](https://img.shields.io/npm/v/@toluade/use-fullscreen.svg)](https://www.npmjs.com/package/@toluade/use-fullscreen)
+
 A React hook that allows toggling between fullscreen mode and normal mode in a web application. The useFullscreen hook returns an object containing the following:
 
 - toggleFullscreen
@@ -97,3 +99,7 @@ function App() {
 | Prop        | Description                                    | Type   |
 | ----------- | ---------------------------------------------- | ------ |
 | containerId | The id of the element to be set to fullscreen. | string |
+
+## License
+
+MIT © [Toluade](https://github.com/Toluade)
